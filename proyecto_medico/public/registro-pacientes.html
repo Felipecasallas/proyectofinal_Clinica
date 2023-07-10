@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clinica San Andres</title>
+    <link rel="stylesheet" href="stylesheets/style-formularios.css">
+</head>
+<body>
+    <main>
+        <form action="./agregar" method="post" id="registro-pacientes-form">
+            <h2>Formulario de registro de Pacientes</h2>
+            <label for="paciente">Nombre del Paciente:<span> *</span></label>
+            <input class="controls" type="text" id="paciente" name="paciente" required>
+            <label for="apellido">Apellido del Paciente:<span> *</span></label>
+            <input class="controls type="text" id="apellido" name="apellido" required>
+            <label for="cedula">Numero de Cedula:<span> *</span></label>
+            <input class="controls type="text" id="cedula" name="cedula" required>
+            <label for="edad">Edad del Paciente:<span> *</span></label>
+            <input class="controls type="text" id="edad" name="edad" required>
+            <label for="telefono">Telefono del Paciente:<span> *</span></label>
+            <input class="controls type="tel" id="telefono" name="telefono" required>
+            <label for="especialidad">Especialidad requerida:<span> *</span></label>
+            <select id="especialidad" name="especialidad">
+                <option value="">------------------------  Seleccione la especialidad  ---------------------</option>
+                <option value="Medicina general">Medicina general</option>
+                <option value="Cardiologia">Cardiologia</option>
+                <option value="Medicina interna">Medicina Interna</option>
+                <option value="Dermatología ">Dermatología</option>
+                <option value="Psicologia">Psicologia</option>
+                <option value="Reabilitacion Fisica">Reabilitacion Fisica</option>
+                <option value="Odontología ">Odontología </option>
+                <option value="Radiologia">Radiologia</option>
+            </select>
+            <input class="botons" type="submit" value="Enviar">
+            <input class="botons" type="button" id="botonVolver" value="Volver">
+            
+        </form>
+        <a class="volver" href="/pacientes">Volver</a>    
+    </main>
+</body>
+</html>
